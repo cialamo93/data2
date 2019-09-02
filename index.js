@@ -4,8 +4,9 @@ const fetch = require('node-fetch');
 require('dotenv').config();
 
 const app = express();
+const port = process.env.PORT || 3000; //En caso de que no haya un puerto en el "environment" o este no funcione, se usa el puerto 3000.
 
-app.listen(3000, () => console.log('escuchando al 3000 po chorizo'));
+app.listen(port, () => console.log(`Arrancando el servidor desde el ${port} po chorizo`));
 app.use(express.static('public'));
 app.use(express.json());
 
@@ -63,7 +64,8 @@ app.get('/weather/:latlon', async (request, response) => {
 
 //Set-Location -Path "C:\Users\calam\Desktop\Porquerias_Ignacio\programacion2\3.5"
 //cd C:/Users/calam/Desktop/Porquerias_Ignacio/programacion2/3.5
-
+//git remote add github https://github.com/cialamo93/data2.git
+//git push -u github master
 //Lo de arriba es para poner la carpeta en el powershell
 
 
