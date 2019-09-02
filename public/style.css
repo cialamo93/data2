@@ -1,0 +1,26 @@
+div {
+    padding: 10px;
+    /* background-color: aqua */
+}
+
+h1 {
+    background-color: orange;
+    width: 230px
+}
+
+p {
+    background-color: greenyellow;
+    width: 230px
+}
+
+#tiempo {
+    background-color: pink
+}
+
+#aire {
+    background-color: lightblue
+}
+
+#mapid {
+    height: 180px;
+}
